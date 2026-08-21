@@ -58,7 +58,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 
 - **[data.gov.au - ATO Datasets](https://data.gov.au/data/organization/australian-taxation-office)** — Official open datasets published by the Australian Taxation Office, including small business benchmarks, taxation statistics, and annual corporate tax transparency reports.
 - **[Standard Business Reporting (SBR)](https://www.sbr.gov.au/)** — Definitive specification and ebMS3 messaging standards for digital reporting to Australian government agencies (ATO, ASIC, APRA, State Revenue Offices).
-- **[SuperStream Technical Standards](https://www.ato.gov.au/businesses-and-organisations/super-information-for-employers/paying-super-contributions/superstream)** — Technical specifications and XBRL taxonomy for digital superannuation contributions and rollovers.
+- **[SuperStream Technical Standards](https://softwaredevelopers.ato.gov.au/SuperStreamStandard)** — Technical specifications and XBRL taxonomy for digital superannuation contributions and rollovers.
 - **[Single Touch Payroll (STP) Phase 2 Employer Guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/in-detail/single-touch-payroll-phase-2-employer-reporting-guidelines)** — Detailed disaggregation of gross requirements for Australian payroll systems.
 
 ---
