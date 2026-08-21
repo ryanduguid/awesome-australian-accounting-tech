@@ -38,7 +38,7 @@
 - **[MaryAddisonHamilton](https://github.com/ryanduguid/MaryAddisonHamilton)** *(Australian Accounting Skills for Claude Code)* — 9 Claude Code agent skills for Australian public practice accounting workflows: BAS preparation, FBT return compilation, Division 7A loan registers, Single Touch Payroll (STP) finalisation, and year-end workpapers.
 - **[subcontractor-accounting-skills](https://github.com/ryanduguid/subcontractor-accounting-skills)** — Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP calculations, Coal LSL, and contractor payroll tax provisions.
 - **[DrDebits](https://github.com/ryanduguid/DrDebits)** — Versioned, primary-source-linked ethical instructions and system prompts for LLM-assisted Australian accounting and BAS work.
-- **[xero-ai-review-gateway](https://github.com/ryanduguid/xero-ai-review-gateway)** — Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
+- **[ElizabethAnneAlexander](https://github.com/ryanduguid/ElizabethAnneAlexander)** — Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
 - **[OpenAccountants](https://github.com/openaccountants/openaccountants)** — Open-source tax guides for AI coding agents with human-in-the-loop review.
 
 ---
