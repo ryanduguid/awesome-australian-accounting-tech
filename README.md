@@ -26,17 +26,17 @@
 
 ## Compliance, Payroll & Tax Tools
 
-- **[payday-super-checker](https://github.com/ryanduguid/payday-super-checker)** — Experimental CLI evaluation tool for validating Australian payday-super contribution timelines, statutory due dates (7 business days), holiday calendars, and estimating SG charge exposure.
-- **[EdwinNixon](https://github.com/ryanduguid/EdwinNixon)** — Deterministic Base Rate Entity tests under s 23AA of the *Income Tax Rates Act 1986*, Division 203 franking benchmark-rule checks, and corporate distribution statements.
-- **[LouisGoldberg](https://github.com/ryanduguid/LouisGoldberg)** — Review tooling for trust distributions, including reimbursement-agreement risk indicators under s 100A and foreign-trust receipt calculations under s 99B of the *Income Tax Assessment Act 1936*.
+- **[CharlesHenryWickens](https://github.com/ryanduguid/CharlesHenryWickens)** *(payday-super-checker)* — Experimental CLI evaluation tool for validating Australian payday-super contribution timelines, statutory due dates (7 business days), holiday calendars, and estimating SG charge exposure.
+- **[TheExchequerTally](https://github.com/ryanduguid/TheExchequerTally)** — Deterministic Base Rate Entity tests under s 23AA of the *Income Tax Rates Act 1986*, Division 203 franking benchmark-rule checks, and corporate distribution statements.
+- **[SolomonsSword](https://github.com/ryanduguid/SolomonsSword)** — Review tooling for trust distributions, including reimbursement-agreement risk indicators under s 100A and foreign-trust receipt calculations under s 99B of the *Income Tax Assessment Act 1936*.
 - **[Tax Radar AU](https://github.com/ryanduguid/tax-radar-au)** — Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
-- **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** — Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
+- **[RussellMathews](https://github.com/ryanduguid/RussellMathews)** *(monthly-close-control-plane)* — Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
 
 ---
 
 ## AI Agents & LLM Practitioner Guides
 
-- **[aus-accounting-mcp](https://github.com/ryanduguid/aus-accounting-mcp)** - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO benchmarks, Payday Super 2026 stress simulations, Division 7A amortisation, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity.
+- **[JohnKenley](https://github.com/ryanduguid/JohnKenley)** *(aus-accounting-mcp)* - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO small-business benchmarks, Payday Super statutory deadline review, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity. Division 7A is refused by design until a reviewed engine exists.
 - **[MaryAddisonHamilton](https://github.com/ryanduguid/MaryAddisonHamilton)** *(Australian Accounting Skills for Claude Code)* — 9 Claude Code agent skills for Australian public practice accounting workflows: BAS preparation, FBT return compilation, Division 7A loan registers, Single Touch Payroll (STP) finalisation, and year-end workpapers.
 - **[Hardhat Ledger](https://github.com/ryanduguid/hardhat-ledger)** — Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP calculations, Coal LSL, and contractor payroll tax provisions.
 - **[DrDebits](https://github.com/ryanduguid/DrDebits)** — Versioned, primary-source-linked ethical instructions and system prompts for LLM-assisted Australian accounting and BAS work.
