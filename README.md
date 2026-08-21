@@ -27,7 +27,7 @@
 ## Compliance, Payroll & Tax Tools
 
 - **[payday-super-checker](https://github.com/ryanduguid/payday-super-checker)** — Experimental CLI evaluation tool for validating Australian payday-super contribution timelines, statutory due dates (7 business days), holiday calendars, and estimating SG charge exposure.
-- **[au-tax-change-impact-monitor](https://github.com/ryanduguid/au-tax-change-impact-monitor)** — Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
+- **[Tax Radar AU](https://github.com/ryanduguid/tax-radar-au)** — Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
 - **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** — Review-first controls for monthly and annual trial balance exports, featuring deterministic period locking and exception surfacing.
 
 ---
@@ -36,7 +36,7 @@
 
 - **[aus-accounting-mcp](https://github.com/ryanduguid/aus-accounting-mcp)** - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO benchmarks, Payday Super 2026 stress simulations, Division 7A amortisation, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity.
 - **[MaryAddisonHamilton](https://github.com/ryanduguid/MaryAddisonHamilton)** *(Australian Accounting Skills for Claude Code)* — 9 Claude Code agent skills for Australian public practice accounting workflows: BAS preparation, FBT return compilation, Division 7A loan registers, Single Touch Payroll (STP) finalisation, and year-end workpapers.
-- **[subcontractor-accounting-skills](https://github.com/ryanduguid/subcontractor-accounting-skills)** — Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP calculations, Coal LSL, and contractor payroll tax provisions.
+- **[Hardhat Ledger](https://github.com/ryanduguid/hardhat-ledger)** — Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP calculations, Coal LSL, and contractor payroll tax provisions.
 - **[DrDebits](https://github.com/ryanduguid/DrDebits)** — Versioned, primary-source-linked ethical instructions and system prompts for LLM-assisted Australian accounting and BAS work.
 - **[ElizabethAnneAlexander](https://github.com/ryanduguid/ElizabethAnneAlexander)** — Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
 - **[OpenAccountants](https://github.com/openaccountants/openaccountants)** — Open-source tax guides for AI coding agents with human-in-the-loop review.
