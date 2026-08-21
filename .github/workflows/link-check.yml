@@ -21,6 +21,18 @@ jobs:
         with:
           python-version: "3.12"
       - name: Require https Markdown links
-        run: python -c "import pathlib,re,sys; text=pathlib.Path('README.md').read_text(encoding='utf-8'); links=re.findall(r'\\[[^\\]]+\\]\\(([^)]+)\\)', text); bad=[u for u in links if u.startswith('http:')];
-print(f'checked {len(links)} links');
-sys.exit(1 if bad else 0)"
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          text = Path("README.md").read_text(encoding="utf-8")
+          links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
+          bad = [url for url in links if url.startswith("http:")]
+          print(f"checked {len(links)} links")
+          if bad:
+              print("http links:")
+              print("\n".join(bad))
+              raise SystemExit(1)
+          PY
