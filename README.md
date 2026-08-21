@@ -27,8 +27,10 @@
 ## Compliance, Payroll & Tax Tools
 
 - **[payday-super-checker](https://github.com/ryanduguid/payday-super-checker)** — Experimental CLI evaluation tool for validating Australian payday-super contribution timelines, statutory due dates (7 business days), holiday calendars, and estimating SG charge exposure.
+- **[EdwinNixon](https://github.com/ryanduguid/EdwinNixon)** — Deterministic Base Rate Entity tests under s 23AA of the *Income Tax Rates Act 1986*, Division 203 franking benchmark-rule checks, and corporate distribution statements.
+- **[LouisGoldberg](https://github.com/ryanduguid/LouisGoldberg)** — Review tooling for trust distributions, including reimbursement-agreement risk indicators under s 100A and foreign-trust receipt calculations under s 99B of the *Income Tax Assessment Act 1936*.
 - **[Tax Radar AU](https://github.com/ryanduguid/tax-radar-au)** — Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
-- **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** — Review-first controls for monthly and annual trial balance exports, featuring deterministic period locking and exception surfacing.
+- **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** — Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
 
 ---
 
@@ -63,6 +65,7 @@
 
 ## Legislation & Primary Source Repositories
 
+- **[SirArthurFadden](https://github.com/ryanduguid/SirArthurFadden)** — Pipeline for building a provenance-rich local retrieval corpus from in-force Commonwealth tax legislation.
 - **[Federal Register of Legislation](https://www.legislation.gov.au/)** — Official whole-of-government website for Commonwealth legislation. Key primary acts include:
   - *Income Tax Assessment Act 1997* (ITAA 1997)
   - *Income Tax Assessment Act 1936* (ITAA 1936)
