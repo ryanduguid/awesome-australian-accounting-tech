@@ -1,4 +1,4 @@
-# Awesome Australian Accounting Tech [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+A curated compendium of open-source libraries, computational accounting engines, ATO datasets, legislation APIs, and AI agent workflows.
 
 > A curated list of open-source tools, computational accounting libraries, official government datasets, statutory APIs, and AI agent skills for Australian public practice, commercial finance, and fintech engineering.
 
