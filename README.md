@@ -1,4 +1,4 @@
-# Awesome Australian Accounting Tech
+# Australian Accounting Technology Index
 
 A curated compendium of open-source libraries, computational accounting engines, ATO datasets, legislation APIs, and AI agent workflows.
 
