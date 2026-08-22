@@ -1,3 +1,5 @@
+# Awesome Australian Accounting Tech
+
 A curated compendium of open-source libraries, computational accounting engines, ATO datasets, legislation APIs, and AI agent workflows.
 
 > A curated list of open-source tools, computational accounting libraries, official government datasets, statutory APIs, and AI agent skills for Australian public practice, commercial finance, and fintech engineering.
@@ -6,7 +8,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 
 ## Contents
 
-- [Computational Engines & Financial Modelling](#computational-engines--financial-modeling)
+- [Computational Engines & Financial Modelling](#computational-engines--financial-modelling)
 - [Compliance, Payroll & Tax Tools](#compliance-payroll--tax-tools)
 - [AI Agents & LLM Practitioner Guides](#ai-agents--llm-practitioner-guides)
 - [General Ledger & API Connectors](#general-ledger--api-connectors)
