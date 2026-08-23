@@ -52,6 +52,22 @@ jobs:
       - name: Resolve every link in README.md
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          args: --no-progress --max-retries 2 README.md
+          # Government hosts are bot-hostile in specific, known ways, and a
+          # checker that cries wolf is worse than none. ato.gov.au answers 403
+          # to any non-browser agent even on live pages, and data.gov.au
+          # answers 302, so both are accepted rather than called broken. The
+          # cost is that a genuinely removed ato.gov.au page reads as 403 and
+          # passes; the 404 case, which is how a link list normally rots, is
+          # still caught.
+          #
+          # sbr.gov.au and softwaredevelopers.ato.gov.au negotiate HTTP/2
+          # badly enough that the request fails at the transport, which is not
+          # a status code and cannot be accepted. They are excluded here and
+          # checked by hand.
+          args: >-
+            --no-progress --max-retries 2 --max-redirects 5
+            --accept 200,204,206,301,302,303,307,308,403
+            --exclude '^https://(www\.sbr\.gov\.au|softwaredevelopers\.ato\.gov\.au)'
+            README.md
           lycheeVersion: v0.24.2
           fail: true
