@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # There is no application code here, so pinned action SHAs in the link-check
+  # workflow are the only dependency this repository has.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
