@@ -1,5 +1,18 @@
 # Australian Accounting Technology Index
 
+```
++----------------------------------------------------------------------+
+|                  awesome-australian-accounting-tech                  |
++----------------------------------------------------------------------+
+|             Curated open source tools for AU accounting              |
++----------------------------------+-----------------------------------+
+| DR  what it gives you            | CR  what it needs                 |
++----------------------------------+-----------------------------------+
+| curated AU accounting links      | PR submissions to the list        |
+| seven category tool index        | -                                 |
++----------------------------------+-----------------------------------+
+```
+
 A curated compendium of open-source libraries, computational accounting engines, ATO datasets, legislation APIs, and AI agent workflows.
 
 > A curated list of open-source tools, computational accounting libraries, official government datasets, statutory APIs, and AI agent skills for Australian public practice, commercial finance, and fintech engineering.
