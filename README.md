@@ -36,6 +36,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 
 - **[Ozzit](https://github.com/ryanduguid/Ozzit)** - 130 native Excel `LAMBDA` functions for dynamic-array financial models. Derivative of Craig Hatmaker's Financial Starter Pack; this repo adds Australian GST/FY helpers. See ATTRIBUTION.md. Not an individual-tax engine.
 - **[ato-benchmark-compare](https://github.com/ryanduguid/ato-benchmark-compare)** *(ATO Benchmark Compare)* - Local, offline CLI tool for comparing business profit and loss figures against ATO Small Business Benchmark ranges, showing exact calculations and account mapping audit trails.
+- **[TheWIPTally](https://github.com/ryanduguid/TheWIPTally)** *(The WIP Tally)* - Deterministic AASB 15 construction WIP schedule from a contract CSV: cost-to-cost progress after para B19 exclusions, constrained variations, per-contract contract assets and liabilities, and profit-fade flags. Review aid, not a determination.
 
 ---
 
@@ -53,7 +54,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 
 - **[au-tax-mcp-server](https://github.com/ryanduguid/au-tax-mcp-server)** *(aus-accounting-mcp)* - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO small-business benchmarks, Payday Super statutory deadline review, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity. Division 7A is refused by design until a reviewed engine exists.
 - **[australian-accounting-skills](https://github.com/ryanduguid/australian-accounting-skills)** *(Australian Accounting Skills for Claude Code)* - 9 Claude Code agent skills for Australian public practice accounting workflows: BAS preparation, FBT return compilation, Division 7A loan registers, Single Touch Payroll (STP) finalisation, and year-end workpapers.
-- **[Hardhat Ledger](https://github.com/ryanduguid/hardhat-ledger)** - Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP calculations, Coal LSL, and contractor payroll tax provisions.
+- **[Hardhat Ledger](https://github.com/ryanduguid/hardhat-ledger)** - Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP review workflow, Coal LSL, and contractor payroll tax provisions. The WIP arithmetic lives in [TheWIPTally](https://github.com/ryanduguid/TheWIPTally).
 - **[DrDebits](https://github.com/ryanduguid/DrDebits)** - Versioned, primary-source-linked ethical instructions and system prompts for LLM-assisted Australian accounting and BAS work.
 - **[xero-ai-review-gateway](https://github.com/ryanduguid/xero-ai-review-gateway)** - Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
 - **[OpenAccountants](https://github.com/openaccountants/openaccountants)** - Open-source tax guides for AI coding agents with human-in-the-loop review.
