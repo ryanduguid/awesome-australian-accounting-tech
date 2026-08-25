@@ -46,6 +46,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 - **[SolomonsSword](https://github.com/ryanduguid/SolomonsSword)** - Review tooling for trust distributions, including reimbursement-agreement risk indicators under s 100A and foreign-trust receipt calculations under s 99B of the *Income Tax Assessment Act 1936*.
 - **[Tax Radar AU](https://github.com/ryanduguid/tax-radar-au)** - Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
 - **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** - Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
+- **[review-ready-gate](https://github.com/ryanduguid/review-ready-gate)** - Deterministic readiness gate that stops incomplete BAS, month-end, and year-end workpaper packs from reaching manager review. It does not approve a file.
 
 ---
 
