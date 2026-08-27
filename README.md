@@ -46,18 +46,18 @@ A curated compendium of open-source libraries, computational accounting engines,
 - **[TheExchequerTally](https://github.com/ryanduguid/TheExchequerTally)** - Deterministic Base Rate Entity tests under s 23AA of the *Income Tax Rates Act 1986*, Division 203 franking benchmark-rule checks, and corporate distribution statements.
 - **[SolomonsSword](https://github.com/ryanduguid/SolomonsSword)** - Review tooling for trust distributions, including reimbursement-agreement risk indicators under s 100A and foreign-trust receipt calculations under s 99B of the *Income Tax Assessment Act 1936*.
 - **[Tax Radar AU](https://github.com/ryanduguid/tax-radar-au)** - Queues potential updates to Australian tax legislation and regulatory sources for human review, with provenance tracking and strict synthetic-data test baselines.
-- **[monthly-close-control-plane](https://github.com/ryanduguid/monthly-close-control-plane)** - Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
-- **[review-ready-gate](https://github.com/ryanduguid/review-ready-gate)** - Deterministic readiness gate that stops incomplete BAS, month-end, and year-end workpaper packs from reaching manager review. It does not approve a file.
+- **[Monthly Close Controls](https://github.com/ryanduguid/monthly-close-controls)** *(monthly-close-control-plane)* - Review-first controls for monthly and annual trial balance exports, producing deterministic review packs with source hashes and exception surfacing; it does not lock periods.
+- **[Workpaper Review Gate](https://github.com/ryanduguid/workpaper-review-gate)** *(review-ready-gate)* - Deterministic readiness gate that stops incomplete BAS, month-end, and year-end workpaper packs from reaching manager review. It does not approve a file.
 
 ---
 
 ## AI Agents & LLM Practitioner Guides
 
-- **[au-tax-mcp-server](https://github.com/ryanduguid/au-tax-mcp-server)** *(aus-accounting-mcp)* - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO small-business benchmarks, Payday Super statutory deadline review, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity. Division 7A is refused by design until a reviewed engine exists.
+- **[Aus Accounting MCP](https://github.com/ryanduguid/aus-accounting-mcp)** *(aus-accounting-mcp)* - Unified Model Context Protocol (MCP) server for Australian computational accounting, exposing ATO small-business benchmarks, Payday Super statutory deadline review, and synthetic SBR fixtures to Claude Desktop, Claude Code, Cursor, and Antigravity. Division 7A is refused by design until a reviewed engine exists.
 - **[australian-accounting-skills](https://github.com/ryanduguid/australian-accounting-skills)** *(Australian Accounting Skills for Claude Code)* - 9 Claude Code agent skills for Australian public practice accounting workflows: BAS preparation, FBT return compilation, Division 7A loan registers, Single Touch Payroll (STP) finalisation, and year-end workpapers.
 - **[Hardhat Ledger](https://github.com/ryanduguid/hardhat-ledger)** - Claude Code skills tailored for Australian construction and mining subcontractors: progress claim schedules, retention ledgers, WIP review workflow, Coal LSL, and contractor payroll tax provisions. The WIP arithmetic lives in [TheWIPTally](https://github.com/ryanduguid/TheWIPTally).
 - **[DrDebits](https://github.com/ryanduguid/DrDebits)** - Versioned, primary-source-linked ethical instructions and system prompts for LLM-assisted Australian accounting and BAS work.
-- **[xero-ai-review-gateway](https://github.com/ryanduguid/xero-ai-review-gateway)** - Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
+- **[Xero Ledger Review Gate](https://github.com/ryanduguid/xero-ledger-review-gate)** *(elizabeth-anne-alexander)* - Fixed-policy, zero-network safety boundary designed for AI-assisted trial balance review using synthetic test data.
 - **[OpenAccountants](https://github.com/openaccountants/openaccountants)** - Open-source tax guides for AI coding agents with human-in-the-loop review.
 
 ---
