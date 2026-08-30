@@ -34,7 +34,7 @@ A curated compendium of open-source libraries, computational accounting engines,
 
 ## Computational Engines & Financial Modelling
 
-- **[Ozzit](https://github.com/ryanduguid/Ozzit)** - 130 native Excel `LAMBDA` functions for dynamic-array financial models. Derivative of Craig Hatmaker's Financial Starter Pack; this repo adds Australian GST/FY helpers. See ATTRIBUTION.md. Not an individual-tax engine.
+- **[Ozzit](https://github.com/ryanduguid/Ozzit)** - 134 native Excel `LAMBDA` functions for dynamic-array financial models. Derivative of Craig Hatmaker's Financial Starter Pack; this repo adds Australian GST/FY helpers. See ATTRIBUTION.md. Not an individual-tax engine.
 - **[ato-benchmark-compare](https://github.com/ryanduguid/ato-benchmark-compare)** *(ATO Benchmark Compare)* - Local, offline CLI tool for comparing business profit and loss figures against ATO Small Business Benchmark ranges, showing exact calculations and account mapping audit trails.
 - **[TheWIPTally](https://github.com/ryanduguid/TheWIPTally)** *(The WIP Tally)* - Deterministic AASB 15 construction WIP schedule from a contract CSV: cost-to-cost progress after para B19 exclusions, constrained variations, per-contract contract assets and liabilities, and profit-fade flags. Review aid, not a determination.
 
