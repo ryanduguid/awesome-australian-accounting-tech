@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -27,19 +28,36 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FILES = ("README.md",)
 ARCHIVED_TARGET_ALLOWLIST: frozenset[str] = frozenset()
-OWN_REPO = re.compile(r"https://github\.com/ryanduguid/([A-Za-z0-9._-]+)")
+# GitHub owner and repository names are case-insensitive, so match and
+# count them that way.
+OWN_REPO = re.compile(r"https://github\.com/ryanduguid/([A-Za-z0-9._-]+)", re.I)
+MAX_ATTEMPTS = 5
 GITHUB_API = "https://api.github.com/repos/ryanduguid/"
 USER_AGENT = "awesome-australian-accounting-tech-archived-check"
 
 
-def repository_is_archived(name: str) -> bool:
+def repository_is_archived(
+    name: str, *, opener: object = urllib.request.urlopen
+) -> bool:
     headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(GITHUB_API + name, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            with opener(req, timeout=30) as resp:  # type: ignore[operator]
+                payload = json.loads(resp.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as exc:
+            # 4xx is definitive; 5xx and transport errors get a bounded retry.
+            if not 500 <= exc.code < 600 or attempt == MAX_ATTEMPTS:
+                raise
+            print(f"retry {attempt}/{MAX_ATTEMPTS - 1} {name}: HTTP {exc.code}")
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == MAX_ATTEMPTS:
+                raise
+            print(f"retry {attempt}/{MAX_ATTEMPTS - 1} {name}: {exc}")
     archived = payload.get("archived")
     if not isinstance(archived, bool):
         raise ValueError(f"GitHub API returned no archived flag for {name}")
@@ -48,7 +66,7 @@ def repository_is_archived(name: str) -> bool:
 
 def linked_repositories(text: str) -> dict[str, int]:
     """Map each linked ryanduguid repository name to its link count."""
-    return dict(Counter(OWN_REPO.findall(text)))
+    return dict(Counter(name.lower() for name in OWN_REPO.findall(text)))
 
 
 def archived_target_failures(
