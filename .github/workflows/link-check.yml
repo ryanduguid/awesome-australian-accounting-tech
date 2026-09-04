@@ -44,7 +44,19 @@ jobs:
               raise SystemExit(1)
           PY
 
-      # What the job was missing: the step above only ever inspected the
+      # An archived repository still answers 200, so lychee below cannot tell
+      # a maintained home from a read-only archive. After the September 2026
+      # consolidation every engine lives in a monorepo, and a link to the old
+      # repository sends a reader to the archive. This step asks the GitHub
+      # API once per ryanduguid repository and fails on an archived target.
+      - name: Test the archived-target policy
+        run: python scripts/test_check_archived_targets.py
+      - name: Fail on links to archived ryanduguid repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/check_archived_targets.py
+
+      # What the job was missing: the https step only ever inspected the
       # scheme, so a dead link passed green, which for a link list is the one
       # failure that matters. lycheeVersion is pinned as well as the action
       # ref, because pinning the action by SHA does not pin the binary it
